@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeiras</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+
+        .bandeira {
+            margin-left: 50px;
+            margin-top: 50px;
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            transition: transform 0.3s;
+        }
+        
+        .bandeira:hover {
+            transform: scale(1.2);
+        }
+        .bandeira::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .bandeira:hover::after {
+            opacity: 1;
+        }
+
+
+
+
+        .italia {
+            display: flex;
+        }
+        
+        
+        .italia1 {
+            background-color: green;
+            width: 33.3%;
+        }
+        .italia2 {
+            background-color: white;
+            width: 33.3%;
+        }
+        .italia3 {
+            background-color: red;
+            width: 33.3%;
+        }
+
+
+        
+        .japao {
+            display: grid;
+        }
+
+
+        .japao1 {
+            background-color: red;
+            border-radius: 50%;
+            align-self: center;
+            justify-self: center;
+            width: 100px;
+            height: 100px;
+        }
+
+
+        .holanda{
+            display: grid;
+        }
+
+
+        
+        .holanda1 {
+            background-color: red;
+            height: 100.3%;
+        }
+        .holanda2 {
+            background-color: white;
+            height: 100.3%;
+        }
+        .holanda3 {
+            background-color: blue;
+            height: 100.3%;
+        }
+
+        @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+            align-items: center; /
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bandeira italia" title="Itália">
+            <div class="italia1"></div>
+            <div class="italia2"></div>
+            <div class="italia3"></div>
+        </div>
+        <div class="bandeira japao" title="Japão">
+            <div class="japao1"></div>
+        </div>
+        <div class="bandeira holanda" title="Holanda">
+            <div class="holanda1"></div>
+            <div class="holanda2"></div>
+            <div class="holanda3"></div>
+        </div>
+    </div>
+</body>
+</html>

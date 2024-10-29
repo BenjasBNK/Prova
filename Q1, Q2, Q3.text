@@ -1,0 +1,17 @@
+Q2
+o html Linguagem de marcação, não de programação pra uso geral, o css um linguagem de estilo, usada no codigo html, já o java é uma linguagem  de prog orientada a objetos 
+e javaScript como o nome diz é uma linguagem de script.
+
+Q3
+A)
+o css inline adiciona estilos aos elementos no codigo html usando o style, dessa forma ele não é reutilizavel em outro codigo.
+o css internal define o estilos usando style so que o head do documento, dessa forma afeta toda a pag web, mas tambem não é retulizavel em outro codigo 
+ja o csss external escreve o estilos da pag em um arquivo separado, vinculando o com o link, dessa forma ele tem facil manuntençao e pode ser reutilizado mais facilmente.
+
+B)
+existem o seltores universais que selcionam todos os elemntos usando o "*" e  os seletores de tipo que usam a tags tipo "Header{}" 
+e aqueles que selecionam uma classe especifica tipo ".chat-corpo{}"
+
+C)
+tem o static que é o padrão, o relative que posiciona em realação a posição original,
+o absolute que posiciona em relação ao ancestral mais proximo e o fixed que posiciona em relação a janela de visualização.
